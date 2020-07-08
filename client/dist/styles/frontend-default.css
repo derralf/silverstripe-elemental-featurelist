@@ -1,0 +1,48 @@
+/* ==========================================================================
+   derralf/elemental-featurelist
+   ========================================================================== */
+.derralf__elements__featurelist__element__elementfeaturelistholder .element__title + .featurelist-wrapper {
+  padding-top: 30px; }
+
+.derralf__elements__featurelist__element__elementfeaturelistholder .featurelist-wrapper {
+  text-align: center; }
+
+.derralf__elements__featurelist__element__elementfeaturelistholder .btn-featurelist-toggle {
+  padding-bottom: 30px; }
+
+.derralf__elements__featurelist__element__elementfeaturelistholder .featurelist-item-image {
+  padding: 20px 0; }
+  .derralf__elements__featurelist__element__elementfeaturelistholder .featurelist-item-image img,
+  .derralf__elements__featurelist__element__elementfeaturelistholder .featurelist-item-image .fa {
+    display: block;
+    margin: 0 auto; }
+  .derralf__elements__featurelist__element__elementfeaturelistholder .featurelist-item-image img {
+    height: 80px;
+    width: auto; }
+  .derralf__elements__featurelist__element__elementfeaturelistholder .featurelist-item-image .fa {
+    color: #337ab7;
+    font-size: 70px;
+    line-height: 80px;
+    height: 80px; }
+
+.js .derralf__elements__featurelist__element__elementfeaturelistholder .featurelist-wrapper.featurelist-toggled .featurelist {
+  -webkit-transition: max-height 0.5s ease-in-out;
+  -o-transition: max-height 0.5s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
+  max-height: 0;
+  overflow: hidden; }
+
+.js .derralf__elements__featurelist__element__elementfeaturelistholder .btn-featurelist-toggle .fa {
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  -o-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out; }
+
+.js .derralf__elements__featurelist__element__elementfeaturelistholder .featurelist-wrapper.reveal-details .featurelist {
+  max-height: 2000px; }
+
+.js .derralf__elements__featurelist__element__elementfeaturelistholder .featurelist-wrapper.reveal-details .btn-featurelist-toggle .fa {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }

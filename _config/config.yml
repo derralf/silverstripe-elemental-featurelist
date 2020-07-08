@@ -1,0 +1,16 @@
+# ---
+# Name: elementalfeaturelist
+# ---
+
+# Derralf\Elements\Featurelist\Element\ElementFeaturelistHolder:
+#   # disable StyledTitle
+#   title_tag_variants: null
+#   title_alignment_variants: null
+#   # styles
+#   style_default_description: 'Standard: 2 Spalten'
+#   styles:
+#     TwoColumns: '2 Spalten'
+
+# Derralf\Elements\Featurelist\Model\ElementFeatureListItem:
+#   readmore_link_class: 'btn btn-primary btn-readmore'
+

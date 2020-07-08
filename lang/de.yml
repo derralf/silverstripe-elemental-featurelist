@@ -1,0 +1,16 @@
+de:
+  Derralf\Elements\Fearurelist\Element\ElementFeatureListHolder:
+    ToggleButtonDefaultLabel: 'Features'
+
+  Derralf\Elements\Fearurelist\Model\ElementFeatureListItem:
+    PLURALNAME: Feature
+    PLURALS:
+      one: Feature
+      other: '{count} Features'
+    SINGULARNAME: Feature
+    TitleLabel: Titel
+    ContentLabel: Inhalt
+    ImageLabel: Bild
+    ReadMoreLinkLabel: Link
+    SortLabel: Sortierung
+

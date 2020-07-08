@@ -1,0 +1,130 @@
+/* ==========================================================================
+   derralf/elemental-featurelist
+   ========================================================================== */
+
+
+// some default variables.
+// you may comment or change them when using this scss file in your workflow
+
+$brand-primary:         darken(#428bca, 6.5%) !default;
+
+$font-size-base:          14px !default;
+$line-height-base:        1.428571429 !default; // 20/14
+$line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
+
+$grid-gutter-width:         30px !default;
+
+
+
+
+
+.derralf__elements__featurelist__element__elementfeaturelistholder {
+
+    .element__title + .featurelist-wrapper {
+        padding-top: $grid-gutter-width;
+    }
+
+    .featurelist-wrapper {
+        text-align: center;
+        //padding-top: $grid-gutter-width;
+    }
+    .btn-featurelist-toggle {
+        padding-bottom: $grid-gutter-width;
+    }
+    .feature-list {
+    }
+    .grid-list-item {}
+
+    .featurelist-item {}
+
+    .featurelist-item-image {
+        padding: $line-height-computed 0;
+        img,
+        .fa {
+            display: block;
+            margin: 0 auto;
+        }
+        img {
+            height: 80px;
+            width: auto;
+        }
+        .fa {
+            color: $brand-primary;
+            font-size: 70px;
+            line-height: 80px;
+            height: 80px;
+        }
+    }
+    .featurelist-item-title{}
+    .featurelist-item-content{}
+
+
+
+    // Hide/Toggle FAQs
+    .js & {
+        .featurelist-wrapper.featurelist-toggled .featurelist {
+            transition: max-height 0.5s ease-in-out;
+            max-height: 0;
+            overflow: hidden;
+
+        }
+        .btn-featurelist-toggle .fa {
+            transition: transform 0.2s ease-in-out;
+        }
+        .featurelist-wrapper {
+            &.reveal-details {
+                .featurelist {
+                    max-height: 2000px;
+                }
+                .btn-featurelist-toggle .fa {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+
+
+
+
+    //.teaser-list {
+    //    .card {
+    //        background: #FFF;
+    //        position: relative;
+    //        border: 1px solid $gray-lighter;
+    //        margin-bottom: $grid-gutter-width;
+    //
+    //        // Color variants, uses Mixin above
+    //        &.grey {
+    //            background: $gray-lighter;
+    //            border: 0;
+    //        }
+    //        &.primary {
+    //            @include image-teaser-card-variant($brand-primary, $brand-primary, 0);
+    //        }
+    //        &.primary-dark {
+    //            @include image-teaser-card-variant($brand-primary-dark, $brand-primary-dark, 0);
+    //        }
+    //        &.secondary {
+    //            @include image-teaser-card-variant($brand-success, $brand-success, 0);
+    //        }
+    //        &.white-no-border {
+    //            border-width: 0;
+    //            .card-block {
+    //                padding-left: 0;
+    //                padding-right: 0;
+    //                padding-bottom: 0;
+    //            }
+    //        }
+    //    }
+    //    .card-title {
+    //        margin-bottom: ($line-height-computed/2);
+    //        hyphens: auto;
+    //    }
+    //    .card-block {
+    //        padding: $grid-gutter-width;
+    //    }
+    //}
+}
+
+
+
